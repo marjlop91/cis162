@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+/*
+   Define sections of your page. Use nav, footer, section, header. 
+   You should already have header and nav on your pages from 1-2.
+   Create an external CSS file to link to both pages.
+   Style the following: fonts, font size, font color, background color, width. 
+      body 
+      header
+      h1
+      nav ul
+      section
+      footer
+   Validate HTML and CSS. 
+   Upload all files to your GitHub.
+   
+   Style Sheet
+   Author: Mario Lopez
+   Date:   02/22/2024
+   
+   Filename: main.css
+
+*/
+
+
+
+/* HTML and Body Styles */
+html{
+   background-color: beige
+}
+
+body{
+   color: black;
+   font-family: arial, 'Times New Roman', Times, serif, sans-serif;
+}
+
+
+/* Heading Styles */
+h1{
+   font-size: 2.5em;
+}
+h2{
+   font-size: 1.6em;
+}
+
+h1, h2{
+   color:darkblue;
+   font-family: Georgia, 'Times New Roman', sans-serif;
+   letter-spacing: 0.03em;
+   padding-left: 5px;
+}
+h1{
+   background-color: rgb(222,128,60);
+   font-family: Tahoma,'Times New Roman', sans-serif;
+}
+h2{
+   background-color: rgb(235,177,131);
+}
+
+p{
+   margin: 0% 2.5%;
+}
+
+ol{
+   margin-left: 2.5%;
+}
+
+
+/* Navigation Styles */	
+nav{
+   font-size: 0.85em;
+}
+
+nav > ul {
+   line-height: 1.5em;
+   list-style-type: none;
+   padding-left: 7.5px;
+}
+
+
+/* Footer Styles */
+body > footer{
+   background-color: rgb(250, 219, 194);
+   color: black; color: rgb(115, 138, 241);
+   font: normal small-caps bold 1em/1.75em
+         arial, 'Times New Roman', sans-serif;
+   text-align: center;
+   padding:0px;
+   margin: 14.5% 20% 0px 20%;
+}
