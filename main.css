@@ -2,30 +2,26 @@
 
 
 /*
-   Define sections of your page. Use nav, footer, section, header. 
-   You should already have header and nav on your pages from 1-2.
-   Create an external CSS file to link to both pages.
-   Style the following: fonts, font size, font color, background color, width. 
-      body 
-      header
-      h1
-      nav ul
-      section
-      footer
+   Redesign with:
+      *centered layout
+      *styled horizontal navigation
+      *2 column layout for content (sections)
+      *Add third page (school). 1 or 2 column layout
+      *add an image to at least one page.
    Validate HTML and CSS. 
    Upload all files to your GitHub.
    
    Style Sheet
    Author: Mario Lopez
-   Date:   02/22/2024
+   Date:   03/01/2024
    
    Filename: main.css
 
 */
 
 
-
 /* HTML and Body Styles */
+
 html{
    background-color: beige
 }
@@ -33,7 +29,32 @@ html{
 body{
    color: black;
    font-family: arial, 'Times New Roman', Times, serif, sans-serif;
+   /* Center */
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 960px;
+   min-width: 640px;
+   width: 90%;
 }
+
+
+
+/* Horizontal Navigation Styles */
+body > header > nav.horizontalNavigation li{
+   width: 25%;
+}
+nav.horizontalNavigation li{
+   display: block;
+   float: left;
+}
+nav.horizontalNavigation a{
+   display: block;
+   text-align: center;
+}
+
+
+
+
 
 
 /* Heading Styles */
@@ -48,18 +69,19 @@ h1, h2{
    color:darkblue;
    font-family: Georgia, 'Times New Roman', sans-serif;
    letter-spacing: 0.03em;
-   padding-left: 5px;
 }
 h1{
-   background-color: rgb(222,128,60);
+   background-color: rgb(237, 133, 59);
    font-family: Tahoma,'Times New Roman', sans-serif;
+   padding-left: 5px;
 }
 h2{
    background-color: rgb(235,177,131);
+   padding-left: 5px;
 }
 
 p{
-   margin: 0% 2.5%;
+   margin: 5% 2.5%;
 }
 
 ol{
@@ -79,6 +101,7 @@ nav > ul {
 }
 
 
+
 /* Footer Styles */
 body > footer{
    background-color: rgb(250, 219, 194);
@@ -87,5 +110,30 @@ body > footer{
          arial, 'Times New Roman', sans-serif;
    text-align: center;
    padding:0px;
-   margin: 14.5% 20% 0px 20%;
+   margin: 70% 20% 0px 20%;
+}
+
+
+
+/* Vertical Navigation Styles */
+
+
+/* Left Column Paragraph Styles */
+section#leftColumn{
+   clear: left;
+   float: left;
+   width: 35%;
+}
+
+
+
+/* Right Column Styles */
+div#rightColumn{
+   background-color: burlywood;
+   float: left;
+   width: 65%;
+   margin: 21px 0px;
+}
+div#rightColumn>img{
+   margin-left: 2.5%;
 }
